@@ -1,0 +1,149 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-du3lun_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+#page {
+  font-family: system-ui, sans-serif;
+  color: var(--color);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: var(--background);
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.button.inverted {
+    background: transparent; 
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-du3lun_END -->
+      <style>.section-container.svelte-1grguq5.svelte-1grguq5{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem}.logo.svelte-1grguq5.svelte-1grguq5{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-1grguq5.svelte-1grguq5{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-1grguq5 nav.svelte-1grguq5{display:flex;gap:2rem}.desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-1grguq5.svelte-1grguq5{display:flex
+}}.mobile-nav.svelte-1grguq5.svelte-1grguq5{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-1grguq5.svelte-1grguq5{display:none
+}}#popup.svelte-1grguq5.svelte-1grguq5{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-1grguq5 button#close.svelte-1grguq5{position:absolute;right:1rem;top:1rem}
+.clickup-form.svelte-1xrdgd6{max-width:800px;margin:20px auto;padding:20px;border-radius:8px;box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);background-color:#f9f9f9}h2.svelte-1xrdgd6{text-align:center;margin-bottom:20px;color:#333}.form-row.svelte-1xrdgd6{display:flex;justify-content:space-between;margin-bottom:15px}.form-group.svelte-1xrdgd6{flex:1;margin-right:10px}.form-group.svelte-1xrdgd6:last-child{margin-right:0}label.svelte-1xrdgd6{display:block;margin-bottom:5px;color:#555}input[type="text"].svelte-1xrdgd6,textarea.svelte-1xrdgd6,select.svelte-1xrdgd6,input[type="number"].svelte-1xrdgd6,input[type="date"].svelte-1xrdgd6{width:calc(100% - 22px);padding:10px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;font-size:16px}.submit-button.svelte-1xrdgd6{width:100%;padding:12px 20px;background-color:#007bff;color:white;border:none;border-radius:4px;cursor:pointer;font-size:16px;transition:background-color 0.3s ease}.submit-button.svelte-1xrdgd6:disabled{background-color:#ccc;cursor:not-allowed}.response.svelte-1xrdgd6{margin-top:20px;padding:15px;border:1px solid #ddd;border-radius:4px;background-color:#fff}pre.svelte-1xrdgd6{white-space:pre-wrap}@media(max-width: 768px){.form-row.svelte-1xrdgd6{flex-direction:column}.form-group.svelte-1xrdgd6{margin-right:0;margin-bottom:10px}}
+.clickup-table.svelte-1q4c7by.svelte-1q4c7by{max-width:1000px;margin:20px auto;padding:20px;border-radius:12px;box-shadow:0 8px 16px rgba(0, 0, 0, 0.1);background:linear-gradient(135deg, #e0f2f7, #f0f8ff);color:#333}h2.svelte-1q4c7by.svelte-1q4c7by{text-align:center;margin-bottom:25px;color:#2c3e50;font-weight:600;font-size:2em}.form-row.svelte-1q4c7by.svelte-1q4c7by{display:flex;justify-content:space-between;margin-bottom:20px}.form-group.svelte-1q4c7by.svelte-1q4c7by{flex:1;margin-right:15px}.form-group.svelte-1q4c7by.svelte-1q4c7by:last-child{margin-right:0}label.svelte-1q4c7by.svelte-1q4c7by{display:block;margin-bottom:8px;color:#555;font-weight:500}input[type="text"].svelte-1q4c7by.svelte-1q4c7by,select.svelte-1q4c7by.svelte-1q4c7by{width:calc(100% - 22px);padding:12px;border:1px solid #ddd;border-radius:8px;box-sizing:border-box;font-size:16px;transition:border-color 0.3s ease;background-color:#fff}input[type="text"].svelte-1q4c7by.svelte-1q4c7by:focus,select.svelte-1q4c7by.svelte-1q4c7by:focus{border-color:#007bff;outline:none}.button-group.svelte-1q4c7by.svelte-1q4c7by{margin-bottom:25px}.fetch-button.svelte-1q4c7by.svelte-1q4c7by{padding:14px 25px;background-color:#007bff;color:white;border:none;border-radius:8px;cursor:pointer;font-size:16px;transition:background-color 0.3s ease}.fetch-button.svelte-1q4c7by.svelte-1q4c7by:hover{background-color:#0056b3}.fetch-button.svelte-1q4c7by.svelte-1q4c7by:disabled{background-color:#ccc;cursor:not-allowed}table.svelte-1q4c7by.svelte-1q4c7by{width:100%;border-collapse:collapse;margin-top:25px;box-shadow:0 4px 8px rgba(0, 0, 0, 0.05);border-radius:12px;overflow:hidden}th.svelte-1q4c7by.svelte-1q4c7by,td.svelte-1q4c7by.svelte-1q4c7by{border:1px solid #eee;padding:14px;text-align:left;font-size:16px}th.svelte-1q4c7by.svelte-1q4c7by{background-color:#f0f8ff;font-weight:600;color:#495057}tr.svelte-1q4c7by.svelte-1q4c7by:nth-child(even){background-color:#f9f9f9}tr.svelte-1q4c7by.svelte-1q4c7by:hover{background-color:#e8f5e9}td.svelte-1q4c7by button.svelte-1q4c7by{padding:8px 16px;border:none;border-radius:6px;cursor:pointer;font-size:14px;margin:4px;transition:background-color 0.3s ease}td.svelte-1q4c7by button.svelte-1q4c7by:first-child{background-color:#28a745;color:white}td.svelte-1q4c7by button.svelte-1q4c7by:first-child:hover{background-color:#218838}td.svelte-1q4c7by button.svelte-1q4c7by:last-child{background-color:#dc3545;color:white}td.svelte-1q4c7by button.svelte-1q4c7by:last-child:hover{background-color:#c82333}.response.svelte-1q4c7by.svelte-1q4c7by{margin-top:30px;padding:20px;border:1px solid #ddd;border-radius:10px;background-color:#fff;box-shadow:0 4px 8px rgba(0, 0, 0, 0.05)}.response.svelte-1q4c7by h3.svelte-1q4c7by{margin-bottom:10px;color:#333;font-weight:600}.response.svelte-1q4c7by pre.svelte-1q4c7by{white-space:pre-wrap;background-color:#f5f5f5;padding:10px;border-radius:6px;font-size:14px;overflow-x:auto}@media(max-width: 768px){.form-row.svelte-1q4c7by.svelte-1q4c7by{flex-direction:column}.form-group.svelte-1q4c7by.svelte-1q4c7by{margin-right:0;margin-bottom:15px}table.svelte-1q4c7by.svelte-1q4c7by,th.svelte-1q4c7by.svelte-1q4c7by,td.svelte-1q4c7by.svelte-1q4c7by{font-size:14px}}@media(max-width: 480px){.clickup-table.svelte-1q4c7by.svelte-1q4c7by{padding:15px}th.svelte-1q4c7by.svelte-1q4c7by,td.svelte-1q4c7by.svelte-1q4c7by{padding:10px}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-3c3e3874"><header class="section-container svelte-1grguq5"><div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5"><img src="https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg" alt=""></a>
+    <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="https://abdelfatax.com">Home</a><a class="link svelte-1grguq5" href="wa.me/+201004709848">Contact</a></nav></div>
+  <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5"><img src="https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg" alt=""></a>
+    <button id="open" aria-label="Open mobile navigation"></button>
+    </div></header></div> 
+<div class="section" id="section-3e5fd455"><div class="clickup-form svelte-1xrdgd6"><h2 class="svelte-1xrdgd6">Create ClickUp Task</h2>
+
+  <div class="form-row svelte-1xrdgd6"><div class="form-group svelte-1xrdgd6"><label for="recordId" class="svelte-1xrdgd6">Record ID (Optional)</label>
+      <input type="text" id="recordId" placeholder="Optional" class="svelte-1xrdgd6" value=""></div>
+
+    <div class="form-group svelte-1xrdgd6"><label for="taskName" class="svelte-1xrdgd6">Task Name</label>
+      <input type="text" id="taskName" placeholder="Task Name" class="svelte-1xrdgd6" value=""></div></div>
+
+  <div class="form-group svelte-1xrdgd6"><label for="taskDescription" class="svelte-1xrdgd6">Task Description</label>
+    <textarea id="taskDescription" placeholder="Task Description" class="svelte-1xrdgd6"></textarea></div>
+
+  <div class="form-row svelte-1xrdgd6"><div class="form-group svelte-1xrdgd6"><label for="status" class="svelte-1xrdgd6">Status</label>
+      <select id="status" class="svelte-1xrdgd6"><option value="Open">Open</option><option value="In Progress">In Progress</option><option value="Review">Review</option><option value="Closed">Closed</option><option value="To do">To do</option></select></div>
+
+    <div class="form-group svelte-1xrdgd6"><label for="priority" class="svelte-1xrdgd6">Priority</label>
+      <select id="priority" class="svelte-1xrdgd6"><option value="Urgent">Urgent</option><option value="High">High</option><option value="Normal">Normal</option><option value="Low">Low</option></select></div></div>
+
+  <div class="form-row svelte-1xrdgd6"><div class="form-group svelte-1xrdgd6"><label for="assignee" class="svelte-1xrdgd6">Assignee (User ID)</label>
+      <input type="number" id="assignee" placeholder="User ID" class="svelte-1xrdgd6" value=""></div>
+
+    <div class="form-group svelte-1xrdgd6"><label for="startDate" class="svelte-1xrdgd6">Start Date</label>
+      <input type="date" id="startDate" class="svelte-1xrdgd6" value=""></div>
+
+    <div class="form-group svelte-1xrdgd6"><label for="dueDate" class="svelte-1xrdgd6">Due Date</label>
+      <input type="date" id="dueDate" class="svelte-1xrdgd6" value=""></div></div>
+
+  <div class="form-row svelte-1xrdgd6"><div class="form-group svelte-1xrdgd6"><label for="clickupApiKey" class="svelte-1xrdgd6">ClickUp API Key</label>
+      <input type="text" id="clickupApiKey" placeholder="API Key" class="svelte-1xrdgd6" value=""></div>
+
+    <div class="form-group svelte-1xrdgd6"><label for="clickupListId" class="svelte-1xrdgd6">ClickUp List ID</label>
+      <input type="text" id="clickupListId" placeholder="List ID" class="svelte-1xrdgd6" value=""></div></div>
+
+  <button class="submit-button svelte-1xrdgd6" >Create Task</button>
+
+  </div></div> 
+<div class="section" id="section-073b7dba"><div class="clickup-table svelte-1q4c7by"><h2 class="svelte-1q4c7by">ClickUp Fetch, Edit &amp; Update</h2>
+
+  <div class="form-row svelte-1q4c7by"><div class="form-group svelte-1q4c7by"><label for="clickupApiKey" class="svelte-1q4c7by">ClickUp API Key</label>
+      <input type="text" id="clickupApiKey" placeholder="API Key" class="svelte-1q4c7by" value=""></div>
+
+    <div class="form-group svelte-1q4c7by"><label for="clickupListId" class="svelte-1q4c7by">ClickUp List ID</label>
+      <input type="text" id="clickupListId" placeholder="List ID" class="svelte-1q4c7by" value=""></div></div>
+
+  <div class="button-group svelte-1q4c7by"><button class="fetch-button svelte-1q4c7by" >Fetch Tasks</button></div>
+
+  
+
+  </div></div> 
+
+      <script type="module">
+      import('/_symbols/74e81156-4154-4052-ba0c-590a818ac84b.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-073b7dba'),
+              hydrate: true,
+              props: {}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/d938983e-d480-489b-84fe-4b6e993d2e39.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-3e5fd455'),
+              hydrate: true,
+              props: {}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/4383a8e9-401e-4392-a19c-42165dc74734.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-3c3e3874'),
+              hydrate: true,
+              props: {"logo":{"title":"","image":{"alt":"","src":"https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg","url":"https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg","size":3}},"site_nav":[{"link":{"url":"https://abdelfatax.com","label":"Home","active":false}},{"link":{"url":"wa.me/+201004709848","label":"Contact"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
